@@ -1,0 +1,6 @@
+init_config:
+
+instances:
+    -   nginx_status_url: http://127.0.0.1:8080/nginx_status/
+        tags:
+            -   instance:bar
