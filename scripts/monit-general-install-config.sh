@@ -31,9 +31,9 @@ if [ $monit_installed -ne 1 ] ; then
   exit 0
 fi
 
-cd /etc/monit.d/
 # @todo create a way to link to default system config / available-config-folder
-ln -sf /usr/local/git/infra/config-available/monit/monit.d
-ln -sf monit.d/system
+#cd /etc/monit.d/
+#ln -sf /usr/local/git/infra/config-available/monit/monit.d
+#ln -sf monit.d/system
 systemctl enable monit
 systemctl start monit
